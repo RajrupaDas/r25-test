@@ -1,9 +1,17 @@
 #include <stdint.h>
 #include <parsing.h>
 #include <math.h>
-// implement interpolation here
-int interpolation(uint16_t channel) {
-	// write interpolation code here
+// interpolating within range
+int interpolation(uint16_t channel) 
+{
+    if (channel>2047) 
+    {
+        channel=2047;
+    }
+    
+    int sabertooth_value = (int)((channel/2047.0)*255);
+    
+    return sabertooth_value;
 }
 // creating 11 bit channel
 uint16_t *parse_buffer(uint8_t buff[]) { 
