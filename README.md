@@ -44,15 +44,12 @@ If you are able to compile your code successfully you should see something like 
 
 # Solution
 ## Understanding
-Describe what you understood about the problem.
+the motors only accept values in a specific range so the value needs to be interpolated. if else statements need to be used to decide on the movement direction.
 
 ## Thought Process
-After understanding the problem, describe how you decided to proceed towards solving the question.
-
+i wrote an algorithm and used that to get a code as im not familiar with c
 ## Implementation
-How did you decide to implement your solution.
-
-Mention the details, such as the scaling used in the interpolation and how you tested it.
+i used command prompt for compiling
 
 # Google Form
 [Link to Repo Submission](https://docs.google.com/forms/d/e/1FAIpQLSeKVbm2dqWxwA5lbEkRfzY8KF619mI5ibGs0Cm2e5wrb0hoWQ/viewform)
