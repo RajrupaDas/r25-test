@@ -44,16 +44,13 @@ If you are able to compile your code successfully you should see something like 
 
 # Solution
 ## Understanding
-Describe what you understood about the problem.
+The motors only accept values in a certain range. hence we need to make sure that the values are interpolated within that range. If else statements can be used to determine the direction of motion.
 
 ## Thought Process
-After understanding the problem, describe how you decided to proceed towards solving the question.
+after understanding the program i wrote down a simple algorith for the code which i then used to get a code from chatgpt as im not familiar with the syntax of c
 
 ## Implementation
-How did you decide to implement your solution.
-
-Mention the details, such as the scaling used in the interpolation and how you tested it.
-
+i tested the code using command prompt 
 # Google Form
 [Link to Repo Submission](https://docs.google.com/forms/d/e/1FAIpQLSeKVbm2dqWxwA5lbEkRfzY8KF619mI5ibGs0Cm2e5wrb0hoWQ/viewform)
 
