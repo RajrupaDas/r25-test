@@ -3,7 +3,17 @@
 #include <math.h>
 // implement interpolation here
 int interpolation(uint16_t channel) {
-	// write interpolation code here
+	int interpolation(uint16_t channel) {
+    if (channel > 2047) {
+        channel = 2047;
+    }
+    
+    // Map the 11-bit channel value (0-2047) to the 8-bit Sabertooth command range (0-255)
+    int sabertooth_value = (int)((channel / 2047.0) * 255);
+    
+    return sabertooth_value;
+}
+
 }
 // creating 11 bit channel
 uint16_t *parse_buffer(uint8_t buff[]) { 
